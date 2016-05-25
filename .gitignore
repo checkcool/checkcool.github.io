@@ -1,0 +1,14 @@
+node_modules
+bin
+obj
+Properties
+src
+dist
+checkcool.csproj
+checkcool.csproj.user
+checkcool.sln
+checkcool.v12.suo
+Web.config
+Web.Debug.config
+Web.Release.config
+.sass-cache
