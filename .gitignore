@@ -2,8 +2,6 @@ node_modules
 bin
 obj
 Properties
-src
-dist
 checkcool.csproj
 checkcool.csproj.user
 checkcool.sln

@@ -1,0 +1,211 @@
+@import "./pix2rem/variable";
+@import "./pix2rem/fn";
+
+//how to use it? 如何使用？
+.pageview {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: $mockup_min_width_px;
+    height: 100%;
+    color: $grey_2;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: $mockup_width_px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: r(100);
+    position: relative;
+    border-bottom: none;
+
+    &.fixed {
+        position: fixed;
+        border-bottom: none;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+        .container {
+            position: relative;
+            height: r(100);
+            border-bottom: none;
+            background-color: #fbfbfb;
+        }
+    }
+
+    .back {
+        position: absolute;
+        display: block;
+        width: r(100);
+        height: r(100);
+        left: 0;
+        top: 0;
+    }
+
+
+    .logo {
+        color: $blue_3;
+        line-height: r(100);
+        padding: 0 r(20);
+        font-size: r(40);
+        font-weight: 700;
+
+        span {
+            color: $grey_2;
+            padding-left: r(10);
+            font-weight: 400;
+        }
+    }
+    .clock{
+        float:right;
+        display:block;
+        line-height: r(80);
+        margin-top:r(20);
+        padding-right:r(20);
+        color:$grey_5;
+        font-size:12px;
+    }
+    .up_right{
+        position:absolute;
+        top:r(10);
+        right:r(20);
+        a{
+            margin-left:r(30);
+            font-size:12px;
+            text-shadow: 2px 2px 2px #a8a8a8;
+        }
+    }
+}
+
+.search_bar {
+    padding-top: r(110);
+    padding-bottom: r(30);
+
+    form {
+        margin: 0 r(20);
+        border: 1px solid $blue_3;
+        border-radius: 2px;
+        height: 45px;
+        display: block;
+        position: relative;
+
+        a {
+            display: none;
+        }
+
+        input[type='text'] {
+            height: 45px;
+            line-height: 45px;
+            border: none;
+            width: 79.99%;
+            box-sizing: border-box;
+            padding: 0 r(20);
+        }
+
+        input[type='submit'] {
+            height: 45px;
+            line-height: 45px;
+            width: 19.99%;
+            border: none;
+            background-color: $blue_3;
+            color: $white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.popular_sites {
+    padding: r(20) 0;
+
+    .site_list {
+        padding: 0 r(20);
+
+        .item {
+            display: block;
+            width: 100%;
+            margin-bottom: r(30);
+
+            a {
+                width: 24.99%;
+                display: block;
+                float: left;
+                color: $grey_2;
+
+                img {
+                    width: r(58);
+                    max-width: 58px;
+                    margin-right: r(15);
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.info {
+    padding: r(20) 0;
+
+    .title {
+        padding-left: r(20);
+        margin-bottom: r(20);
+        padding-bottom: r(10);
+        border-bottom: 1px solid $grey_1;
+        font-size:r(32);
+    }
+
+    .site_list {
+        padding: 0 r(20);
+        .item{
+            display:block;
+            width:100%;
+            margin-bottom:r(15);
+            &:last-of-type{
+                margin-bottom:0;
+            }
+            a{
+                display:block;
+                width:19.99%;
+                padding:r(15) 0;
+                text-align:center;
+                float:left;
+                &:first-of-type{
+                    background-color:$blue_3;
+                    color:$white;
+                    border-radius:2px;
+                }
+            }
+        }
+    }
+
+    &.life{
+        .item a:first-of-type{
+            background-color:$blue_1 !important;
+        }
+    }
+}
+
+.foot{
+    font-size:12px;
+    margin:r(40) 0;
+    padding-top:r(40);
+    border-top:1px solid $grey_1;
+    text-align:center;
+    color:$grey_5;
+    font-size:14px;
+    line-height:25px;
+    a{
+        margin-bottom:r(10);
+    }
+}
