@@ -191,6 +191,11 @@
 
     &.life{
         .item a:first-of-type{
+            background-color:$blue_4 !important;
+        }
+    }
+    &.fun{
+        .item a:first-of-type{
             background-color:$blue_1 !important;
         }
     }

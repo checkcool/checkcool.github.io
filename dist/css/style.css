@@ -172,6 +172,9 @@
   border-radius: 2px;
 }
 .info.life .item a:first-of-type {
+  background-color: #398EFB !important;
+}
+.info.fun .item a:first-of-type {
   background-color: #337AB7 !important;
 }
 
