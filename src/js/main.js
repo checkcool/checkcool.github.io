@@ -31,5 +31,15 @@ function indexHandler() {
         sethomeEl.onclick = function () {
             util.setHome(this, window.location.href);
         };
+        window.onscroll = function () {
+            var headerEl = document.getElementsByTagName("header")[0],
+                scrollTop = document.body.scrollTop;
+            if (scrollTop > 0) {
+                util.addClass(headerEl, "shadowed");
+            } else {
+                util.removeClass(headerEl, "shadowed");
+            }
+        }
     });
+
 }

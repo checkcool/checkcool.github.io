@@ -1,9 +1,9 @@
 ﻿//util.js
 
 define(function () {
-    var util = {};
+    var u = {};
     //收藏
-    util.addFavorite = function (url, name) {
+    u.addFavorite = function (url, name) {
         var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') !== -1 ? 'Command/Cmd' : 'CTRL';
         if (document.all) {
             window.external.addFavorite(url, name);
@@ -16,7 +16,7 @@ define(function () {
         }
     };
     //设为主页
-    util.setHome = function (obj, url) {
+    u.setHome = function (obj, url) {
         try {
             obj.style.behavior = 'url(#default#homepage)';
             obj.setHomePage(url);
@@ -33,7 +33,8 @@ define(function () {
         }
     };
     //初始化时钟
-    util.initClock = function (obj) {
+    u.initClock = function (obj) {
+        var daysCn = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
         setInterval(function () {
             var date = new Date();
             obj.innerText = date.getFullYear().toString()
@@ -42,14 +43,34 @@ define(function () {
             + "月"
             + date.getDate().toString()
             + "日 "
-            + date.getHours().toString()
-            + "时 "
-            + date.getMinutes().toString()
-            + "分 "
-            + date.getSeconds().toString()
-            + "秒";
+            + daysCn[date.getDay()] + " "
+            + (date.getHours() < 10 ? ("0" + date.getHours()) : date.getHours())
+            + ":"
+            + (date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())
+            + ":"
+            + (date.getSeconds() < 10 ? ("0" + date.getSeconds()) : date.getSeconds());
         }, 1000);
     };
-    return util;
+
+    //css选择器
+    u.hasClass = function (obj, cls) {
+        return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+    }
+
+    u.addClass = function (obj, cls) {
+        if (!u.hasClass(obj, cls)) {
+            obj.className = obj.className.replace(/(^\s*)|(\s*$)/g, "");
+            obj.className += " " + cls;
+        }
+    }
+
+    u.removeClass = function (obj, cls) {
+        if (u.hasClass(obj, cls)) {
+            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+            obj.className = obj.className.replace(reg, ' ');
+        }
+    }
+
+    return u;
 });
 
