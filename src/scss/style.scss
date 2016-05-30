@@ -2,6 +2,9 @@
 @import "./pix2rem/fn";
 
 //how to use it? 如何使用？
+.hide{
+    display:none!important;
+}
 .pageview {
     top: 0;
     left: 0;
@@ -38,9 +41,11 @@
             background-color: #fbfbfb;
         }
     }
-    &.shadowed{
-        box-shadow: 0 4px 3px rgba(0,0,0,.25)
+
+    &.shadowed {
+        box-shadow: 0 4px 3px rgba(0,0,0,.25);
     }
+
     .back {
         position: absolute;
         display: block;
@@ -64,22 +69,25 @@
             font-weight: 400;
         }
     }
-    .clock{
-        float:right;
-        display:block;
+
+    .clock {
+        float: right;
+        display: block;
         line-height: r(80);
-        margin-top:r(20);
-        padding-right:r(20);
-        color:$blue_3;
-        font-size:12px;
+        margin-top: r(20);
+        padding-right: r(20);
+        color: $blue_3;
+        font-size: 12px;
     }
-    .up_right{
-        position:absolute;
-        top:r(10);
-        right:r(20);
-        a{
-            margin-left:r(30);
-            font-size:12px;
+
+    .up_right {
+        position: absolute;
+        top: r(10);
+        right: r(20);
+
+        a {
+            margin-left: r(30);
+            font-size: 12px;
             text-shadow: 2px 2px 2px #a8a8a8;
         }
     }
@@ -164,55 +172,101 @@
         margin-bottom: r(20);
         padding-bottom: r(10);
         border-bottom: 1px solid $grey_1;
-        font-size:r(32);
+        font-size: r(32);
     }
 
     .site_list {
         padding: 0 r(20);
-        .item{
-            display:block;
-            width:100%;
-            margin-bottom:r(15);
-            &:last-of-type{
-                margin-bottom:0;
+
+        .item {
+            display: block;
+            width: 100%;
+            margin-bottom: r(15);
+
+            &:last-of-type {
+                margin-bottom: 0;
             }
-            a{
-                display:block;
-                width:19.99%;
-                padding:r(15) 0;
-                text-align:center;
-                float:left;
-                &:first-of-type{
-                    background-color:$blue_3;
-                    color:$white;
-                    border-radius:2px;
+
+            a {
+                display: block;
+                width: 19.99%;
+                padding: r(15) 0;
+                text-align: center;
+                float: left;
+
+                &:first-of-type {
+                    background-color: $blue_3;
+                    color: $white;
+                    border-radius: 2px;
                 }
             }
         }
     }
 
-    &.life{
-        .item a:first-of-type{
-            background-color:$blue_4 !important;
+    &.life {
+        .item a:first-of-type {
+            background-color: $blue_4 !important;
         }
     }
-    &.fun{
-        .item a:first-of-type{
-            background-color:$blue_1 !important;
+
+    &.fun {
+        .item a:first-of-type {
+            background-color: $blue_5 !important;
+        }
+    }
+    &.books {
+        .item a:first-of-type {
+            background-color: $blue_1 !important;
         }
     }
 }
 
-.foot{
-    font-size:12px;
-    margin:r(40) 0;
-    padding-top:r(40);
-    border-top:1px solid $grey_1;
-    text-align:center;
-    color:$grey_5;
-    font-size:14px;
-    line-height:25px;
-    a{
-        margin-bottom:r(10);
+.foot {
+    font-size: 12px;
+    margin: r(40) 0;
+    padding-top: r(40);
+    border-top: 1px solid $grey_1;
+    text-align: center;
+    color: $grey_5;
+    font-size: 14px;
+    line-height: 25px;
+
+    a {
+        margin-bottom: r(10);
+    }
+}
+
+.rtt {
+    position: fixed;
+    bottom: r(70);
+    right: r(20);
+    display: block;
+    width: r(60);
+    height: r(60);
+    font-size: 0;
+    background: rgba(0,0,0,.25);
+    border-radius: r(8);
+
+    &:before {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: r(20) solid transparent;
+        border-right: r(20) solid transparent;
+        border-bottom: r(20) solid $grey_2;
+        font-size: 0;
+        line-height: 0;
+        margin: r(10) auto 0;
+    }
+    &:after{
+        display:block;
+        content:"";
+        width:r(10);
+        height:r(20);
+        background-color:$grey_2;
+        margin: 0 auto;
+        border-bottom-left-radius:r(4);
+        border-bottom-right-radius:r(4);
     }
 }
