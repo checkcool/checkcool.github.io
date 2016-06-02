@@ -201,6 +201,9 @@
 .foot a {
   margin-bottom: 0.133rem;
 }
+.foot .friends_link a {
+  color: #bbb;
+}
 
 .rtt {
   position: fixed;
