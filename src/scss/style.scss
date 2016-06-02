@@ -219,6 +219,11 @@
             background-color: $blue_1 !important;
         }
     }
+    &.study {
+        .item a:first-of-type {
+            background-color: $blue_6 !important;
+        }
+    }
 }
 
 .foot {

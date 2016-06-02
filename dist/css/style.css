@@ -187,6 +187,9 @@
 .info.books .item a:first-of-type {
   background-color: #337AB7 !important;
 }
+.info.study .item a:first-of-type {
+  background-color: #5B7CA7 !important;
+}
 
 .foot {
   font-size: 12px;
