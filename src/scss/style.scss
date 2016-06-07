@@ -2,9 +2,10 @@
 @import "./pix2rem/fn";
 
 //how to use it? 如何使用？
-.hide{
-    display:none!important;
+.hide {
+    display: none !important;
 }
+
 .pageview {
     top: 0;
     left: 0;
@@ -173,6 +174,12 @@
         padding-bottom: r(10);
         border-bottom: 1px solid $grey_1;
         font-size: r(32);
+        a{
+            font-size: r(32);
+            color:$blue_1;
+            padding-left:r(20);
+            font-weight:400;
+        }
     }
 
     .site_list {
@@ -214,11 +221,13 @@
             background-color: $blue_5 !important;
         }
     }
+
     &.books {
         .item a:first-of-type {
             background-color: $blue_1 !important;
         }
     }
+
     &.study {
         .item a:first-of-type {
             background-color: $blue_6 !important;
@@ -239,8 +248,9 @@
     a {
         margin-bottom: r(10);
     }
-    .friends_link{
-        a{
+
+    .friends_link {
+        a {
             color: $grey_5;
         }
     }
@@ -269,14 +279,42 @@
         line-height: 0;
         margin: r(10) auto 0;
     }
-    &:after{
-        display:block;
-        content:"";
-        width:r(10);
-        height:r(20);
-        background-color:$grey_2;
+
+    &:after {
+        display: block;
+        content: "";
+        width: r(10);
+        height: r(20);
+        background-color: $grey_2;
         margin: 0 auto;
-        border-bottom-left-radius:r(4);
-        border-bottom-right-radius:r(4);
+        border-bottom-left-radius: r(4);
+        border-bottom-right-radius: r(4);
+    }
+}
+
+.world_clocks {
+    padding-top: r(110);
+    padding-bottom: r(30);
+    text-align: center;
+
+    .item{
+        background-color:$blue_2;
+    }
+
+    .clock {
+        width: 150px;
+        overflow: hidden;
+        float: left;
+    }
+
+    .desc {
+        display: -webkit-box;
+        -webkit-box-pack: start;
+        -webkit-box-align: center;
+        height: 150px;
+        padding-right:10px;
+        line-height:30px;
+        font-size:12px;
+        color:$black;
     }
 }
