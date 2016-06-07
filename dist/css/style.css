@@ -250,8 +250,14 @@
 
 .world_clocks {
   padding-top: 1.467rem;
-  padding-bottom: 0.4rem;
   text-align: center;
+  margin-bottom: -0.534rem;
+}
+.world_clocks h2 {
+  border-top: 1px solid #aaa;
+  background-color: #abd0ff;
+  padding: 0.2rem 0;
+  color: #000;
 }
 .world_clocks .item {
   background-color: #abd0ff;

@@ -174,11 +174,12 @@
         padding-bottom: r(10);
         border-bottom: 1px solid $grey_1;
         font-size: r(32);
-        a{
+
+        a {
             font-size: r(32);
-            color:$blue_1;
-            padding-left:r(20);
-            font-weight:400;
+            color: $blue_1;
+            padding-left: r(20);
+            font-weight: 400;
         }
     }
 
@@ -294,11 +295,18 @@
 
 .world_clocks {
     padding-top: r(110);
-    padding-bottom: r(30);
     text-align: center;
+    margin-bottom:r(-40);
 
-    .item{
-        background-color:$blue_2;
+    h2 {
+        border-top: 1px solid $grey_4;
+        background-color: $blue_2;
+        padding: r(15) 0;
+        color: $black;
+    }
+
+    .item {
+        background-color: $blue_2;
     }
 
     .clock {
@@ -312,9 +320,9 @@
         -webkit-box-pack: start;
         -webkit-box-align: center;
         height: 150px;
-        padding-right:10px;
-        line-height:30px;
-        font-size:12px;
-        color:$black;
+        padding-right: 10px;
+        line-height: 30px;
+        font-size: 12px;
+        color: $black;
     }
 }
