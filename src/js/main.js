@@ -21,7 +21,7 @@ var locations = {
 //页面入口
 if (locations.index()) {
     indexHandler();
-} else if (locations.clock) {
+} else if (locations.clock()) {
     clockHandler();
 }
 else {
