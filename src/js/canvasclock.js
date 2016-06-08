@@ -205,6 +205,13 @@
                     date.setTime(utc.getTime() + (3600000 * offset));
                     return date;
                 },
+                seoul: function () {
+                    var date = new Date(),
+                        offset = 9,
+                        utc = this.utc();
+                    date.setTime(utc.getTime() + (3600000 * offset));
+                    return date;
+                },
                 newyork: function () {
                     var utc = this.utc(),
                         offset = -5,
@@ -275,9 +282,58 @@
                         nonSummerTime = utc.getTime() + (3600000 * offset);
                     date.setTime((nonSummerTime >= summerDateStart.getTime() && nonSummerTime <= summerDateEnd.getTime()) ? (nonSummerTime + 3600000) : nonSummerTime);
                     return date;
-                }, dubai: function () {
+                },
+                dubai: function () {
                     var date = new Date(),
                         offset = 4,
+                        utc = this.utc();
+                    date.setTime(utc.getTime() + (3600000 * offset));
+                    return date;
+                },
+                berlin: function () {
+                    var utc = this.utc(),
+                        offset = 1,
+                        date = new Date(),
+                        summerDateStart = canvasclock.lastSundayOfMonth(new Date(date.getFullYear(), 2, 1)),
+                        summerDateEnd = canvasclock.lastSundayOfMonth(new Date(date.getFullYear(), 9, 1)),
+                        nonSummerTime = utc.getTime() + (3600000 * offset);
+                    date.setTime((nonSummerTime >= summerDateStart.getTime() && nonSummerTime <= summerDateEnd.getTime()) ? (nonSummerTime + 3600000) : nonSummerTime);
+                    return date;
+                },
+                toronto: function () {
+                    var utc = this.utc(),
+                        offset = -13,
+                        date = new Date(),
+                        summerDateStart = canvasclock.nthWeekdayOfMonth(0, 2, new Date(date.getFullYear(), 3, 1)),
+                        summerDateEnd = canvasclock.nthWeekdayOfMonth(11, 2, new Date(date.getFullYear(), 10, 1)),
+                        nonSummerTime = utc.getTime() + (3600000 * offset);
+                    date.setTime((nonSummerTime >= summerDateStart.getTime() && nonSummerTime <= summerDateEnd.getTime()) ? (nonSummerTime + 3600000) : nonSummerTime);
+                    return date;
+                },
+                brazil: function () {
+                    var date = new Date(),
+                        offset = -3,
+                        utc = this.utc();
+                    date.setTime(utc.getTime() + (3600000 * offset));
+                    return date;
+                },
+                cairo: function () {
+                    var date = new Date(),
+                        offset = 2,
+                        utc = this.utc();
+                    date.setTime(utc.getTime() + (3600000 * offset));
+                    return date;
+                },
+                newdelhi: function () {
+                    var date = new Date(),
+                        offset = 5,
+                        utc = this.utc();
+                    date.setTime(utc.getTime() + (3600000 * offset));
+                    return date;
+                },
+                bangkok: function () {
+                    var date = new Date(),
+                        offset = 7,
                         utc = this.utc();
                     date.setTime(utc.getTime() + (3600000 * offset));
                     return date;

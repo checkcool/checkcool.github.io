@@ -55,7 +55,14 @@ define(['util', 'canvasclock', 'polyfill'], function (util, cs, pf) {
             paris: '法国 巴黎',
             london: '英国 伦敦',
             sanfrancisco: '美国 旧金山',
-            dubai: '阿联酋 迪拜'
+            dubai: '阿联酋 迪拜',
+            berlin: '德国 柏林',
+            toronto: '加拿大 多伦多',
+            seoul: '韩国 首尔',
+            brazil: '巴西 巴西',
+            bangkok: '泰国 曼谷',
+            newdelhi: '印度 新德里',
+            cairo: '埃及 开罗'
         };
 
         var bjCs = new cs({
@@ -118,6 +125,48 @@ define(['util', 'canvasclock', 'polyfill'], function (util, cs, pf) {
         });
         genDesc(dbCs.options.canvas.parentNode.nextElementSibling, dbCs.options.city, cs.getDateByCity(dbCs.options.city));
 
+        var blCs = new cs({
+            city: 'berlin',
+            canvas: document.getElementById("berlin_clock")
+        });
+        genDesc(blCs.options.canvas.parentNode.nextElementSibling, blCs.options.city, cs.getDateByCity(blCs.options.city));
+
+        var dldCs = new cs({
+            city: 'toronto',
+            canvas: document.getElementById("toronto_clock")
+        });
+        genDesc(dldCs.options.canvas.parentNode.nextElementSibling, dldCs.options.city, cs.getDateByCity(dldCs.options.city));
+
+        var srCs = new cs({
+            city: 'seoul',
+            canvas: document.getElementById("seoul_clock")
+        });
+        genDesc(srCs.options.canvas.parentNode.nextElementSibling, srCs.options.city, cs.getDateByCity(srCs.options.city));
+
+        var bzCs = new cs({
+            city: 'brazil',
+            canvas: document.getElementById("brazil_clock")
+        });
+        genDesc(bzCs.options.canvas.parentNode.nextElementSibling, bzCs.options.city, cs.getDateByCity(bzCs.options.city));
+
+        var crCs = new cs({
+            city: 'cairo',
+            canvas: document.getElementById("cairo_clock")
+        });
+        genDesc(crCs.options.canvas.parentNode.nextElementSibling, crCs.options.city, cs.getDateByCity(crCs.options.city));
+
+        var ndlCs = new cs({
+            city: 'newdelhi',
+            canvas: document.getElementById("newdelhi_clock")
+        });
+        genDesc(ndlCs.options.canvas.parentNode.nextElementSibling, ndlCs.options.city, cs.getDateByCity(ndlCs.options.city));
+
+        var bkCs = new cs({
+            city: 'bangkok',
+            canvas: document.getElementById("bangkok_clock")
+        });
+        genDesc(bkCs.options.canvas.parentNode.nextElementSibling, bkCs.options.city, cs.getDateByCity(bkCs.options.city));
+
         function genDesc(el, city, date) {
             var html = '<strong class="city_cn">'
             + citiesCN[city]
@@ -125,8 +174,8 @@ define(['util', 'canvasclock', 'polyfill'], function (util, cs, pf) {
             + date.getFullYear().toString() + "年"
             + (date.getMonth() + 1).toString() + "月"
             + date.getDate().toString() + "日 "
-            + getDayTimeCn(date) + " "
-            + daysCn[date.getDay()]
+            + daysCn[date.getDay()] + " "
+            + getDayTimeCn(date)
             + '</span><br />'
             + '<strong class="city_en">'
             + city.toUpperCase()
