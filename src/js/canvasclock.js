@@ -275,7 +275,7 @@
                 },
                 sanfrancisco: function () {
                     var utc = this.utc(),
-                        offset = -16,
+                        offset = -8,
                         date = new Date(),
                         summerDateStart = canvasclock.nthWeekdayOfMonth(0, 2, new Date(date.getFullYear(), 3, 1)),
                         summerDateEnd = canvasclock.nthWeekdayOfMonth(11, 2, new Date(date.getFullYear(), 10, 1)),
@@ -302,7 +302,7 @@
                 },
                 toronto: function () {
                     var utc = this.utc(),
-                        offset = -13,
+                        offset = -5,
                         date = new Date(),
                         summerDateStart = canvasclock.nthWeekdayOfMonth(0, 2, new Date(date.getFullYear(), 3, 1)),
                         summerDateEnd = canvasclock.nthWeekdayOfMonth(11, 2, new Date(date.getFullYear(), 10, 1)),
