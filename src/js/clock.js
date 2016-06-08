@@ -46,16 +46,16 @@ define(['util', 'canvasclock', 'polyfill'], function (util, cs, pf) {
             };
 
         var citiesCN = {
-            beijing: '北京',
-            newyork: '纽约',
-            vancouver: '温哥华',
-            tokyo: '东京',
-            moscow: '莫斯科',
-            sydney: '悉尼',
-            paris: '巴黎',
-            london: '伦敦',
-            sanfrancisco: '旧金山',
-            dubai: '迪拜'
+            beijing: '中国 北京',
+            newyork: '美国 纽约',
+            vancouver: '加拿大 温哥华',
+            tokyo: '日本 东京',
+            moscow: '俄罗斯 莫斯科',
+            sydney: '澳大利亚 悉尼',
+            paris: '法国 巴黎',
+            london: '英国 伦敦',
+            sanfrancisco: '美国 旧金山',
+            dubai: '阿联酋 迪拜'
         };
 
         var bjCs = new cs({
