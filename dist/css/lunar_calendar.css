@@ -368,7 +368,12 @@ input, input:focus, select:focus {
 
 .back_to_home a {
   float: right;
-  padding: 20px;
+  padding: 10px;
+}
+.back_to_home:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .foot {
