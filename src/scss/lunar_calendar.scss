@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+﻿@import "./pix2rem/variable";
 /* CSS Document */
 body {
 	font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -287,4 +287,30 @@ input,input:focus,select:focus {
 }
 .hl_j_content{
 	color:#d43111;
+}
+.back_to_home{
+    a{
+        float:right;
+        padding:20px;
+    }
+}
+.foot {
+    font-size: 12px;
+    margin: 40px 0;
+    padding-top: 40px;
+    border-top: 1px solid $grey_1;
+    text-align: center;
+    color: $grey_5;
+    font-size: 14px;
+    line-height: 25px;
+
+    a {
+        margin-bottom: 10px;
+    }
+
+    .friends_link {
+        a {
+            color: $grey_5;
+        }
+    }
 }

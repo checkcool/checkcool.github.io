@@ -14,58 +14,65 @@
 </head>
 
 <body>
-<header class="toolbar" id="toolbar">
-	<span class="icon icon_calendar"></span>
-	<h1></h1>
-    <div class="action"><a href="#" class="today">回今天</a></div>
-</header>
+    <header class="toolbar" id="toolbar">
+        <span class="icon icon_calendar"></span>
+        <h1></h1>
+        <div class="action"><a href="#" class="today">回今天</a></div>
+    </header>
+    <div class="wrapper" id="wrapper">
+        <div class="date_row date_week">
+            <div class="date_item">周日</div>
+            <div class="date_item">周一</div>
+            <div class="date_item">周二</div>
+            <div class="date_item">周三</div>
+            <div class="date_item">周四</div>
+            <div class="date_item">周五</div>
+            <div class="date_item">周六</div>
+        </div>
 
-<div class="wrapper" id="wrapper">
-	<div class="date_row date_week">
-        <div class="date_item">周日</div>
-        <div class="date_item">周一</div>
-        <div class="date_item">周二</div>
-        <div class="date_item">周三</div>
-        <div class="date_item">周四</div>
-        <div class="date_item">周五</div>
-        <div class="date_item">周六</div>
-    </div>
-    
-    <div class="slide_wrap">
-    	<div class="date_slide"> 
-            <div class="date_list" id="date_list_0">
-            </div><!--date_list-->
-            
-            <div class="date_list" id="date_list_1">
-            </div><!--date_list-->
-        </div>
-    </div>
-    
-    <div class="date_info">
-        <div class="date_lunar_info"></div>
-        <div class="date_fetv"></div>
-        <div class="date_gan_zhi"></div>
-        
-        <div class="date_hl">
-            <div class="date_hl_item">
-                <div class="hl_y circle">宜</div>
-                <span class="hl_y_content"></span>
-            </div>
-            
-            <div class="date_hl_item">
-                <div class="hl_j circle">忌</div>
-                <span class="hl_j_content"></span>
+        <div class="slide_wrap">
+            <div class="date_slide">
+                <div class="date_list" id="date_list_0">
+                </div><!--date_list-->
+
+                <div class="date_list" id="date_list_1">
+                </div><!--date_list-->
             </div>
         </div>
-    </div><!--date_info-->
-</div>
+
+        <div class="date_info">
+            <div class="date_lunar_info"></div>
+            <div class="date_fetv"></div>
+            <div class="date_gan_zhi"></div>
+
+            <div class="date_hl">
+                <div class="date_hl_item">
+                    <div class="hl_y circle">宜</div>
+                    <span class="hl_y_content"></span>
+                </div>
+
+                <div class="date_hl_item">
+                    <div class="hl_j circle">忌</div>
+                    <span class="hl_j_content"></span>
+                </div>
+            </div>
+        </div><!--date_info-->
+        <div class="back_to_home">
+            <a href="index.html">返回首页 ></a>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="friends_link">
+            <a href="http://www.kuangzen.com/">KUANG ZEN's HOME</a> | <a href="http://www.cnblogs.com/fastmover/">MOVE FAST</a>
+        </div>
+        <a href="mailto:kbl_1794@qq.com">问题反馈</a> | <a href="mailto:kbl_1794@qq.com">与我联系</a><br>
+        Copyright©2015-2016 checkcool.com 查酷导航
+    </footer>
 <script src="//cdn.bootcss.com/zepto/1.1.3/zepto.min.js"></script>
 <script src="//cdn.bootcss.com/hammer.js/1.0.6/hammer.min.js"></script>
 <script type="text/javascript" src="http://o7qcr3ot0.bkt.clouddn.com/dist/js/jquery.hammer.min.js"></script>
 <script src="dist/js/LunarCalendar.min.js"></script>
 <script src="dist/js/calendar.min.js"></script>
-
-<div style=" width:1px; height:1px; overflow:hidden; position:relative; top:-1px; left:0px;">
     <script>
     var _hmt = _hmt || [];
     (function () {
@@ -87,6 +94,5 @@
         ga('send', 'pageview');
 
     </script>
-</div>
 </body>
 </html>

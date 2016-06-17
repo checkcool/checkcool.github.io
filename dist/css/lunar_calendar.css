@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*颜色*/
 /* CSS Document */
 body {
   font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
@@ -363,4 +364,26 @@ input, input:focus, select:focus {
 
 .hl_j_content {
   color: #d43111;
+}
+
+.back_to_home a {
+  float: right;
+  padding: 20px;
+}
+
+.foot {
+  font-size: 12px;
+  margin: 40px 0;
+  padding-top: 40px;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 25px;
+}
+.foot a {
+  margin-bottom: 10px;
+}
+.foot .friends_link a {
+  color: #bbb;
 }
