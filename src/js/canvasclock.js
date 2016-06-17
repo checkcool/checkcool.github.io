@@ -89,6 +89,9 @@
         },
         /**
          * draw Clock
+         * Reference from: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_animations
+         * @param {String} city, 'beijing' by default 
+         * @param {object HTMLCanvasElement} canvas
          */
         drawClock: function (city, canvas) {
             var now = canvasclock.getDateByCity(city);
