@@ -117,7 +117,7 @@ define(['util', 'jquery', 'highcharts'], function (util, $, Highcharts) {
         options = $.extend({}, defaultOptions, options);
         var realCode = options.code;
         if (options.code != '000001'){
-            options.code = options.code.substr(0, 3) == '600' ? options.code + '.ss' : options.code + '.sz';
+            options.code = options.code.substr(0, 1) == '6' ? options.code + '.ss' : options.code + '.sz';
         } else {
             options.code = options.code + '.ss';
         }
