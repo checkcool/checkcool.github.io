@@ -1,6 +1,6 @@
 ﻿//stock.js
 
-define(['util', 'canvasclock', 'jquery', 'highcharts'], function (util, cs, $, Highcharts) {
+define(['util', 'jquery', 'highcharts'], function (util, $, Highcharts) {
     var clockEl = document.getElementById("clock"),
         addfavEl = document.getElementById("addfav"),
         sethomeEl = document.getElementById("sethome");
