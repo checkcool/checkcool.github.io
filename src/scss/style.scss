@@ -296,7 +296,7 @@
 .world_clocks {
     padding-top: r(110);
     text-align: center;
-    margin-bottom:r(-40);
+    margin-bottom: r(-40);
 
     h2 {
         border-top: 1px solid $grey_4;
@@ -324,5 +324,36 @@
         line-height: 30px;
         font-size: 12px;
         color: $black;
+    }
+}
+
+.stock_analysis {
+    padding-top: r(110);
+    .title{
+        text-align:center;
+        font-size:r(32);
+    }
+    .input_form{
+        padding:r(20);
+    }
+    .fl{
+        width:74.99%;
+    }
+    .fr{
+        width:24.99%;
+    }
+    #stock_code{
+        width:100%;
+        box-sizing:border-box;
+        padding:r(20);
+        border:1px solid $blue_2;
+    }
+    #search_stock{
+        width:100%;
+        box-sizing:border-box;
+        padding:r(20);
+        border:1px solid $blue_2;
+        color:$white;
+        background-color:$blue_2;
     }
 }

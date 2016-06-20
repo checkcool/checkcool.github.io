@@ -277,3 +277,34 @@
   font-size: 12px;
   color: #000;
 }
+
+.stock_analysis {
+  padding-top: 1.467rem;
+}
+.stock_analysis .title {
+  text-align: center;
+  font-size: 0.427rem;
+}
+.stock_analysis .input_form {
+  padding: 0.267rem;
+}
+.stock_analysis .fl {
+  width: 74.99%;
+}
+.stock_analysis .fr {
+  width: 24.99%;
+}
+.stock_analysis #stock_code {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.267rem;
+  border: 1px solid #abd0ff;
+}
+.stock_analysis #search_stock {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.267rem;
+  border: 1px solid #abd0ff;
+  color: #fff;
+  background-color: #abd0ff;
+}
