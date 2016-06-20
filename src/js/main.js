@@ -7,7 +7,7 @@
         "clock": "clock.min",
         "polyfill": "polyfill.min",
         "canvasclock": "canvasclock.min",
-        "stock": "/src/js/stock"
+        "stock": "stock.min"
     },
     shim: {
         "highcharts": {
