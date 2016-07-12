@@ -196,6 +196,9 @@
 .info.study .item a:first-of-type {
   background-color: #5B7CA7 !important;
 }
+.info.haitao .item a:first-of-type {
+  background-color: #4582a0 !important;
+}
 
 .foot {
   font-size: 12px;
