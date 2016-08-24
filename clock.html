@@ -28,6 +28,13 @@
         </header>
         <section class="container world_clocks">
             <h2>世界各地时间</h2>
+            <!-- loading -->
+            <div id="loading" class="spinner spinner-gritcode spinner-md ">
+                <div class="spinner-wrapper">
+                    <div class="spinner-circle"></div>
+                    <div class="spinner-text">加载中...</div>
+                </div>
+            </div>
             <div class="item clearfix"><div class="clock"><canvas id="beijing_clock"></canvas></div><div class="desc"><!--<strong class="city_en"></strong>:<span class="date_en"></span><br /><strong class="city_cn"></strong>:<span class="date_cn"></span>--></div></div>
             <div class="item clearfix"><div class="clock"><canvas id="vancouver_clock"></canvas></div><div class="desc"></div></div>
             <div class="item clearfix"><div class="clock"><canvas id="toronto_clock"></canvas></div><div class="desc"></div></div>
@@ -56,13 +63,6 @@
         <a class="rtt hide" id="rtt" href="#top">
             返回顶部
         </a>
-    </div>
-    <!-- loading -->
-    <div id="loading" class="spinner spinner-gritcode spinner-md ">
-        <div class="spinner-wrapper">
-            <div class="spinner-circle"></div>
-            <div class="spinner-text">加载中...</div>
-        </div>
     </div>
     <script src="//cdn.bootcss.com/require.js/2.2.0/require.min.js" data-main="dist/js/main.min"></script>
     <script>
