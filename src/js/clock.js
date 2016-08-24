@@ -189,12 +189,17 @@ define(['util', 'canvasclock', 'polyfill'], function (util, cs, pf) {
             el.innerHTML = html;
         }
     }
+    function removeLoading() {
+        var el = document.getElementById('loading');
+        el.parentNode.removeChild(el);
+    }
     return {
         init: function () {
             util.initClock(clockEl);
             bindEvents();
             pf.init();
             initCanvasClocks();
+            removeLoading();
         }
     }
 });
