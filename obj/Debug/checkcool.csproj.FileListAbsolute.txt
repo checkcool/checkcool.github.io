@@ -1,0 +1,6 @@
+D:\github\checkcool.github.io\bin\checkcool.dll.config
+D:\github\checkcool.github.io\bin\checkcool.dll
+D:\github\checkcool.github.io\bin\checkcool.pdb
+D:\github\checkcool.github.io\obj\Debug\checkcool.csprojResolveAssemblyReference.cache
+D:\github\checkcool.github.io\obj\Debug\checkcool.dll
+D:\github\checkcool.github.io\obj\Debug\checkcool.pdb

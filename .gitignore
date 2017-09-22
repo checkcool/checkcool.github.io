@@ -1,12 +1,2 @@
 node_modules
-bin
-obj
-Properties
-checkcool.csproj
-checkcool.csproj.user
-checkcool.sln
-checkcool.v12.suo
-Web.config
-Web.Debug.config
-Web.Release.config
 .sass-cache
